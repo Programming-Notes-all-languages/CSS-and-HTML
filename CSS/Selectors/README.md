@@ -49,7 +49,4 @@ then any section of the code within the html file can obtain the attributes defi
 </ul>    
 
 ## The Box Model
-<ul>
-  <li>
-    ![css-box-model](https://github.com/user-attachments/assets/4a73d686-2dad-477e-ae97-36761af5ad3b)
-)
+![css-box-model](https://github.com/user-attachments/assets/4a73d686-2dad-477e-ae97-36761af5ad3b)
