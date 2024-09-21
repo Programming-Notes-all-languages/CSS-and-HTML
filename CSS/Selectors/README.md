@@ -1,4 +1,3 @@
-![css-box-model](https://github.com/user-attachments/assets/4a73d686-2dad-477e-ae97-36761af5ad3b)
 <details>
 <summary>Table of Contents</summary>
 <ol>
@@ -52,5 +51,5 @@ then any section of the code within the html file can obtain the attributes defi
 ## The Box Model
 <ul>
   <li>
-    ![Here]([https://github.com/user-attachments/assets/3d7537a3-e7ec-4bf0-8661-0872112d3374](https://github.com/Programming-Notes-all-languages/CSS-and-HTML/blob/main/CSS/Selectors/Images/css-box-model.png](https://github.com/Programming-Notes-all-languages/CSS-and-HTML/blob/main/CSS/Selectors/Images/css-box-model.png))
+    ![css-box-model](https://github.com/user-attachments/assets/4a73d686-2dad-477e-ae97-36761af5ad3b)
 )
