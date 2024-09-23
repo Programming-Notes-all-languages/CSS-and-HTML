@@ -1,0 +1,32 @@
+.text {
+    font-family: "Times New Roman";
+}
+
+table {
+    background-color: lightpink;
+    border-collapse: collapse;
+}
+
+thead th {
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+tbody td {
+    border: solid;
+        border-width: 1px;
+        border-color: black;
+}
+
+td.age {
+    text-align: center;
+}
+
+thead {
+    background-color: palevioletred
+}
+
+td:hover {background-color: antiquewhite;
+
+}
