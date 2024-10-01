@@ -16,90 +16,142 @@
 ## Comments
 <ul>
   <li>
-    <a>A single line comment is the following in CSS: /* This is a single-line comment */</a>
+    <a>A single line comment is the following in CSS:</a>
+
+```c
+/* This is a single-line comment */
+```
   </li>
   <li>
-    <a>A multi-line comment is the following in CSS: /* This is<br>a multi-line<br>comment */</a>
+    <a>A multi-line comment is the following in CSS:</a>
+
+```css     
+/* This is
+a multi-line
+comment */
+```
   </li>
 </ul>      
 
 ## CSS Selectors
+### The CSS Element Selector
 <ul>
   <li>
-    <a>Here is the syntax for a CSS selector: className {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;propertyName: value;<br> 
-    }</a>
-  </li>
-  <li>
-    <a>The name of the class can be named with the same tag as a section of code within the html file. Class attributes, for instance, within the body class in the css file, will reflect in the encapsulated code within the <a><</a>body<a>></a> tag and the <a><</a>/body<a>></a> tag</a>
-  </li>
-  <li>
-    <a>To create a class where all elements with the class attribute can be modified by a class, the period (.) can be applied before the name of the class</a>
-    <ul>
-      <li>
-        <a>For instance, if a class has the following declaration:
-
-```css
-.gray {
-color: gray;
-}
-```
-
-then any section of the code within the html file can obtain the attributes defined within the class if the class attribute is included after within the html tag. This is accomplished by proceeding the name of the tag within the arrow with the following: <a><</a>tagName class="className"<a>></a>. This is only needed in the opening tag--not in the closing tag</a>
-      </li>
-    </ul>
+    <a>When using an element selector, all HTML elements named htmlElements will all be affected by this CSS class. Each property within this class will affect the appearance of text within the named HTML element</a>
   </li>  
   <li>
-    <a>A class with the name * is a universal class that applies to all elements within the html file. This class is like a parent/base class that applies to all</a> 
-    <ul>
-      <li>
-        <a>Here is an example of a universal class:
-
-```css 
-* {
-    color: #820025;
-    background: rgb(131, 127, 100);
-}
-```
-
-all elements within the html file will have the text color #820025 and a background color of that rgb value</a>
-</li></ul></li>  <li>
-    <a>The grouping selector can be used when multiple HTML elements are desired to share the same class definitions</a>
-    <ul>
-      <li>
-        <a>Here is an example of a grouping selector:
+    <a>Here is the syntax of a CSS element selector:</a> 
 
 ```css
-h1, h2, p {
-    text-align: center;
-    color: red;
+htmlElement {
+    propertyName: value; 
 }
-```
-Now, h1, h2, and p all have their text aligned to the center and all of the text within the tags is red</a>
-</li>  </ul>
-</li>
-  <li>
-    <a>There is even functionality to specify with HTML elements will be affected by the implementation of a class</a>
-    <ul>
-      <li>
-        <a>The syntax for this is the following:
-
-```css
-p.center {
-    text-align: center;
-    color: red;
-}
-```
-only p elements within the HTML file will be affected by the center class</a></li></ul></li>
+```  
+  </li>
 </ul>  
-
-## External, Internal, and Inline CSS
+  
+### The CSS ID Selector
 <ul>
   <li>
-    <a>There are three ways to insert a style sheet within a .html file: external, internal, and inline</a>
+    <a>The id selector uses the id that is associated with an HTML element to define which HTML elements will be affected by this CSS class</a> 
+  </li>
+  <li>
+    <a>Here is the syntax of a CSS id selector:</a>
+
+```css
+#htmlElement {
+    propertyName: value;
+    propertyName2: value2;
+}
+```
   </li>
 </ul>  
 
+### The CSS Class Selector
+<ul>
+  <li>
+    <a>The class selector is used to modify the HTML elements that have that specific class attribute. Therefore, there can be the same HTML element that is affected by a class selector, but that same HTML element later in the code may not be affected if the specific class attribute is not applied</a>
+  </li>
+  <li>
+    <a>Here is the syntax of a CSS class selector:</a>  
+
+```css
+.className {
+    propertyName: value;
+    propertyName2: value2;
+}
+```
+  </li>
+  <li>
+    <a>To then apply the class selector to a specific HTML element, the following can be inserted within the elements tag:</a>
+
+```css
+<htmlElement class="className">
+```
+  </li>
+    <ul>
+      <li>
+        <a>The addition of the above within the first opening HTML element is only needed for the first opening tag--not the second closing tag</a>
+      </li>
+    </ul>    
+  </li>
+  <li>
+    <a>With class selectors, there is functionality to specify which HTML elements should be affected by a class selector. To do that, place the HTML element's name in preceding the period which is in front of the class selector's name</a>
+  </li>
+  <li>
+    <a>Here is the syntax of a CSS class selector that specifies which HTML elements should be affected:</a>
+
+```c
+p.className {
+    propertyName: value;
+    propertyName2: value2;
+}
+```
+  <ul>
+      <li>
+        <a>In the class definition above, this class can now only be applied to the HTML element p</a>
+      </li>
+    </ul>
+  </li>      
+</ul>
+
+### The CSS Universal Selector
+<ul>
+  <li>
+    <a>The universal selector is denoted with a * which essentially selects all HTML elements within the code the CSS file is attached to</a>
+  </li>
+  <li>
+    <a>Here is the syntax of a CSS universal selector:</a>
+
+```css
+* {
+  propertyName: value;
+  propertyName2: value2;
+}
+```
+  </li>  
+</ul>
+
+### The CSS Grouping Selector
+<ul>
+  <li>
+    <a>The grouping selector can be used when multiple HTML elements are desired to share the same class definitions</a>
+  <li>
+    <a>Here is the syntax of a CSS grouping selector:</a>
+
+```css
+htmlElement1, htmlElement2, htmlElement3 {
+    propertyName: value;
+    propertyName2: value2;
+}
+```
+  </li>
+  <li>
+    <a>It is often better to use grouping selectors as a CSS class because it can help reduce the repetition of class definitions</a>
+  </li>
+</ul>    
+
+## External, Internal, and Inline CSS
 ### External CSS
 <ul>
   <li>
@@ -205,6 +257,10 @@ header {
         </a>
     </html>
 ```
+  </li>
+  </ul>
+  </li>
+</ul>  
 
 ### Precedence of External Style Sheets, Internal Style Sheets, and Inline Style Sheets
 <table>
