@@ -486,4 +486,15 @@ td:hover {
       </li>
     </ul>       
   </li>  
+  <li>
+    <a>If the float property is assigned a value of left, then the following HTML element should have a clear property that is assigned a value of left--if the intention of the next HTML block is to not be floated anymore</a>
+  </li>  
+  <li>
+    <a>Sometimes, the content that is floated is taller than the picture, or in some instances, the text is larger than the image. In these cases, the clearfix property can be assigned to an HTML element to create a box that encompasses the largest element, leaving extra space around the smaller element</a>
+    <ul>
+      <li>
+        <a>The value auto is often applied to the clearfix property</a>
+      </li>
+    </ul>    
+  </li>  
 </ul>    
