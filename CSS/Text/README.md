@@ -10,6 +10,24 @@
   <li>
     <a href='#styling-links'>Styling Links</a>
   </li>
+  <li>
+    <a href='#list'>Lists</a>
+  </li>  
+  <li>
+    <a href='#table'>Tables</a>
+  </li>  
+  <li>
+    <a href='#position'>Position</a>
+  </li>
+  <li>
+    <a href='#the-z-index-property'>The z index Property</a>
+  </li>
+  <li>
+    <a href='#overflow'>Overflow</a>
+  </li>
+  <li>
+    <a href='#the-float-property'>The float Property</a>
+  </li>
 </ol>
 </details> 
 
@@ -365,6 +383,107 @@ td:hover {
 ### Relative
 <ul>
   <li>
-    <a>The HTML elements that are relative will be positioned in accordance to the other properties within the defined class</a>
+    <a>The relative value enables the HTML element to be moved relative to where the HTML element would be positioned if the position was set to static</a>
   </li>
+</ul>    
+
+### Absolute
+<ul>
+  <li>
+    <a>HTML elements with a position of absolute are positioned relative to the nearest positioned ancestor, the nearest HTML element</a>
+  </li>
+</ul>    
+
+### Fixed
+<ul>
+  <li>
+    <a>The fixed value when applied to an HTML element keeps the element fixed on the screen, even when the page is scrolled</a>
+  </li>
+</ul>
+
+### Sticky
+<ul>
+  <li>
+    <a>The sticky value is a mix of relative and mix. The element sticks to the screen until the user scrolls down enough. Then, the element will stick to the screen at that point and for the remainder of the page. If the user scrolls back up, then the element will no longer stick</a>
+  </li>
+</ul>    
+
+## The z-index Property
+<ul>
+  <li>
+    <a>The z-index property specifies the precedence in which elements are stacked, whether one element should be in place above another or behind another</a>
+  </li>
+  <li>
+    <a>The z-index property only works when the position is one of the following: absolute, relative, fixed, or sticky</a>
+  </li>
+  <li>
+    <a>The z-index can be assigned an integer value. The lower the integer value, the less precedence, meaning that elements with higher z-indices will be on top of the elements with lower z-indices</a>
+  </li>  
+  <li>
+    <a>Without z-indices, the elements defined last in the .html file will show up on top of the elements that appear earlier in the code</a>
+  </li>  
+</ul>    
+
+## Overflow
+<ul>
+  <li>
+    <a>Overflow in CSS specifies whether to add scroll bars or to clip the content within an element's box</a>
+  </li>
+</ul>    
+
+### Visible
+<ul>
+  <li>
+    <a>visible is the default value assigned to overflow. The overflow is not clipped and the content will appear outside of the element's box</a>
+  </li>
+</ul>   
+
+### Hidden
+<ul>
+  <li>
+    <a>When the overflow property is assigned to hidden, the content is clipped to fit within the element's box, but the rest of the content will be invisible</a>
+  </li>
+</ul>
+
+### Scroll
+<ul>
+  <li>
+    <a>The scroll value adds a scroll bar to the element's box and the information is clipped. Using the scroll bar, all the information can be viewed using the horizontal</a>
+  </li>
+</ul>    
+
+### Auto
+<ul>
+  <li>
+    <a>The value auto is similar to scroll, but it only adds the scroll bars when necessary</a>
+  </li>
+</ul>    
+
+## The float Property
+<ul>
+  <li>
+    <a>The float property is used to format text in a container with pictures</a>
+  </li>
+  <li>
+    <a>The values that are associated with the property are: left, right, none and inherit</a>
+    <ul> 
+      <li>
+        <a>none is the default value for float</a>
+      </li>
+      <li>
+        <a>inherit is used to inherit the parent element's float value</a>
+      </li>  
+    </ul>
+  </li> 
+  <li>
+    <a>When using the float property, the clear property will need to be used. The clear property specifies what should happen after the element that has a float property</a>
+    <ul>
+      <li>
+        <a>The none element is the default value for clear</a>
+      </li>
+      <li>
+        <a>The left value is used for HTML elements</a>
+      </li>
+    </ul>       
+  </li>  
 </ul>    
